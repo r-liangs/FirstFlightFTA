@@ -195,9 +195,9 @@
       <input type="range" class="slider" id="slider" min="0" max="100" value="0">
       <div class="speed-btns">
         <button class="speed-btn" data-speed="1">1×</button>
-        <button class="speed-btn active" data-speed="4">4×</button>
+        <button class="speed-btn" data-speed="4">4×</button>
         <button class="speed-btn" data-speed="16">16×</button>
-        <button class="speed-btn" data-speed="60">60×</button>
+        <button class="speed-btn active" data-speed="60">60×</button>
       </div>
     </div>
     <div class="readout">
@@ -575,7 +575,7 @@ slider.max = track.length - 1;
 const playBtn = document.getElementById('playBtn');
 let playing = false;
 let rafId = null;
-let speed = 4;
+let speed = 60;
 let lastFrameTs = null;
 let playbackSec = 0; // position along compressed timeline
 
